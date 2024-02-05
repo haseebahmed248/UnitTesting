@@ -1,0 +1,16 @@
+rules:
+  - id: no-single-char-variable
+    patterns:
+      - pattern: "\b[A-Za-z]\s=\s"
+    message: "Avoid using single-character variable names."
+    severity: WARNING
+    languages:
+      - java
+
+  - id: opening-brace-same-line
+    patterns:
+      - pattern: "\{\n"
+    message: "Place the opening brace on the same line."
+    severity: WARNING
+    languages:
+      - java
